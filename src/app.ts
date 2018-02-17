@@ -17,7 +17,9 @@ const server = new InversifyExpressServer(container, null, { rootPath }, null, A
 
 server.setConfig((application) => {
   application.set('port', port);
-  if (!production) application.use(morganLogger('dev'));
+  if (!production) {
+    application.use(morganLogger('dev'));
+  }
   application.use(cors());
   application.use(bodyParser.json());
   application.use(bodyParser.urlencoded({ extended: true }));
