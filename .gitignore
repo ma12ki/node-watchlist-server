@@ -7,3 +7,5 @@ dist/
 *.tgz
 *.yaml
 .idea/
+.env
+.env.test
