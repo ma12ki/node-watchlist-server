@@ -18,6 +18,7 @@ const dbUser = process.env.WL_DB_USER;
 const dbPass = process.env.WL_DB_PASSWORD;
 const port = Number(process.env.WL_SERVER_PORT);
 const jwtSecret = process.env.WL_JWT_SECRET;
+const host = process.env.WL_HOST || '127.0.0.1';
 
 export {
   env,
@@ -29,4 +30,5 @@ export {
   dbPass,
   port,
   jwtSecret,
+  host,
 };

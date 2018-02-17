@@ -20,7 +20,7 @@ main({
   port,
 }).then(() => {
   logger.success('######### All services started successfully #########');
-}).catch(rejection => {
+}).catch((rejection) => {
   logger.error('!!!!!!!!! App init failed !!!!!!!!!');
   logger.error(rejection);
   process.exit(1);
