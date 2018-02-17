@@ -32,7 +32,7 @@ server.setErrorConfig((application) => {
 
 const app = server.build();
 const routeInfo = getRouteInfo(container);
-logger.info(`Route Map (root path ${rootPath})`)
+logger.info(`Route Map (root path ${rootPath})`);
 console.log(prettyjson.render({ routes: routeInfo }));
 
 export { app };
