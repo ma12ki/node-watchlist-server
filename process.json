@@ -1,6 +1,6 @@
 {
   "apps" : [{
-    "name"        : "wathlist",
+    "name"        : "watchlist",
     "script"      : "./dist/main.js",
     "watch"       : true,
     "env": {
